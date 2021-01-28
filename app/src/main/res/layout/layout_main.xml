@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.petitgrand.myapplication.MyGLSurfaceView
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Joueur 1, pariez sur votre carte"
+        android:paddingBottom="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:paddingLeft="10dp"
+            android:text="Suite"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="J1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="J2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="J3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="J4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="J5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/textSuite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:paddingLeft="10dp"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/textJ1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="12"/>
+        <TextView
+            android:id="@+id/textJ2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="12"/>
+        <TextView
+            android:id="@+id/textJ3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="12"/>
+        <TextView
+            android:id="@+id/textJ4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="12"/>
+        <TextView
+            android:id="@+id/textJ5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boutonsParis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ButtonMoins"
+            android:text="-"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ButtonEgal"
+            android:text="="/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ButtonPlus"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boutonsChoix"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/buttonContinuer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ButtonContinuer"
+            android:text="Continuer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ButtonPasser"
+            android:text="Passer"/>
+
+    </LinearLayout>
+
+</LinearLayout>
